@@ -1,0 +1,34 @@
+{%extends 'base.html'%}
+
+{%block title_block%}
+
+<title>Details</title>
+
+
+{%endblock%}
+
+{%block main_block%}
+
+<div class="container d-flex justify-content-center align-items-center" style="height: 400px;">
+       
+  <div class="card" style="width: 18rem;">
+      <div class="card-header">
+        Transaction Details
+      </div>
+      <ul class="list-group list-group-flush">
+          <li class="list-group-item">{{data.user|upper}}</li>
+        <li class="list-group-item">{{data.title|capfirst}}</li>
+        <li class="list-group-item">{{data.amount}}</li>
+        <li class="list-group-item">{{data.type}}</li>
+        <li class="list-group-item">{{data.category}}</li>
+        <li class="list-group-item">{{data.created_date|date:"D d M Y"}}</li>
+        
+
+
+
+      </ul>
+    </div>
+
+</div>
+
+{%endblock%}
